@@ -1,0 +1,1742 @@
+{
+    "industry": "Retail",
+    "threats": [
+        {
+            "threat": "Retail Product, Capital, or Financial Theft",
+            "attacksurfaces": [
+                {
+                    "attacksurface": "Cargo/Trailers",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Bypassing Physical Security"
+                            ],
+                            "vulns": [
+                                "Lack of Adequate Personnel or Surveillance",
+                                "Electronic Doors Lack Proper Security (Badges Can Be Discovered and Cloned, Doors or Windows Left Unlocked or Opened, Improperly Hung Doors)",
+                                "Fences, Gates, or Other Physical Barriers Can Be Bypassed",
+                                "Improper Physical Access Control (CWE-1263)",
+                                "Inadequate Usage of Kingpin Locks"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Tracking Denial-of-Service"
+                            ],
+                            "vulns": [
+                                "Inadequate Verification or Tracking Policies Between Vendors",
+                                "Service or Data Accessible Outside of Organization (Credentialed Access, Internal VPN, Etc..)",
+                                "Lack of Configuration Settings That Filter Traffic Based on Port, Protocol, or Source",
+                                "Not Disabling Unnecessary Middleware Features (i.e., Back-End Scripting)",
+                                "Unnecessary Components Enabled",
+                                "Usage of RF Technologies That Lack Jamming Resilience",
+                                "Lack of Employee Training in RF Technologies",
+                                "Inadequate Anomalous RF Signal Detection"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Rerouting Deliveries to Attackers"
+                            ],
+                            "vulns": [
+                                "Employees Untrained to Detect and Mitigate Social Engineering Pretexts",
+                                "Inadequate Verification Policies ",
+                                "Service or Data Accessible Outside of Organization (Credentialed Access, Internal VPN, Etc..)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Pilferage, Direct, or Strategic Cargo Theft"
+                            ],
+                            "vulns": [
+                                "Lack of Use of High-Security Rear Door Locks, GPS Trackers, and Inspections Throughout Delivery Route to Identify Signs of Theft",
+                                "Inadequate Usage of Kingpin Locks",
+                                "Inadequate Threat Intelligence Gathering or Monitoring"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Suppliers",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Forgery/Impersonation of Supplier Purchase Order"
+                            ],
+                            "vulns": [
+                                "Inadequate Verification Policies on Driver, Identifying Information on Truck and Cargo, Use of Secure Pick-Up Numbers",
+                                "Lacking Adequate Cybersecurity Protection or Policies (Malware Infects Organization and Leaks Paperwork That Can Be Used to Commit Fraudulent Pick-Ups)",
+                                "Information Disclosure of Organizational Procedures Within Public Resources",
+                                "Information Disclosure Within Breach Data",
+                                "Excessive Attack Surface",
+                                "Inadequate Threat Intelligence Gathering or Monitoring"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Point-of-Sale",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Compromise Hardware Supply Chain"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Sale of Modified/Counterfeit Products to Legitimate Distributors"
+                                    ],
+                                    "vulns": [
+                                        "Lack of Governance Over Third-Party Vendors",
+                                        "Inadequate Anomalous Hardware Additions Detection",
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Improper Physical Access Control (CWE-1263)",
+                                        "Unnecessary Components Enabled",
+                                        "Insufficient Internal Logging and Monitoring for IOCs "
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Compromise Software Supply Chain"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Manipulation of Development Tools or Environment\nManipulate Software Distribution or Update Mechanism\nImplant Spying Device\nExfiltration of Private Data\nSale of Modified/Counterfeit Products to Legitimate Distributors\nDependency Confusion\nMalicious Code in Firmware"
+                                    ],
+                                    "vulns": [
+                                        "Insufficient Internal Logging and Monitoring for IOCs ",
+                                        "Lack of Governance Over Third-Party Vendors",
+                                        "Lack of Strict Vendor Policy",
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Inadequate Anomalous File Creation Detection",
+                                        "Inadequate Usage of Endpoint Protection Software",
+                                        "Unrestricted Access to Remote Resources",
+                                        "Unnecessary Components Enabled",
+                                        "Unnecessary Features Enabled",
+                                        "Insufficient Verification of Data Authenticity (CWE-345)",
+                                        "Insufficient Vulnerability Scanning",
+                                        "Download of Code Without Integrity Check (CWE-494)",
+                                        "Lack of Systematic Patch Management"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Samsung MST Token Sniffing, Jamming, and Replaying"
+                            ],
+                            "vulns": [
+                                "Usage of Magnetic Stripe Readers"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Install Card Skimmer"
+                            ],
+                            "vulns": [
+                                "Improper Physical Access Control (CWE-1263)",
+                                "Improper Protection of Physical Side Channels (CWE 1300)",
+                                "Improper Access Control (284)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Install Malware (PCI Data Skimming, Cryptomining, Etc.)"
+                            ],
+                            "vulns": [
+                                "Improper Adherence to Coding Standards (CWE-710)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Kiosk-Mode Breakout to Discount Prices"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Interface Manipulation"
+                                    ],
+                                    "vulns": [
+                                        "Lack of Preventative Physical Controls or Employee Oversight"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Sticky Keys, Shortcuts, Open PDF"
+                                    ],
+                                    "vulns": [
+                                        "Unsafe Privileged Account Management (M1026)",
+                                        "Lack of Application Isolation and Sandboxing (M1048)"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Crash Kiosk Software"
+                                    ],
+                                    "vulns": [
+                                        "Lack of Application Isolation and Sandboxing (M1048)"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Shoulder Surfing"
+                                    ],
+                                    "vulns": [
+                                        "Lack of Mindfulness Of Surroundings"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Security Cameras",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Cloud Account or Infrastructure Compromise"
+                            ],
+                            "vulns": [
+                                "Lack of Zero-Trust Policy Controls (M1022)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Deceive AI Cameras With Adversarial Images"
+                            ],
+                            "vulns": [
+                                "Lack of Protective Measures Against DeepFakes",
+                                "Insecure Access Allowing Manipulation of Important Data"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Blind Security Cameras With UV Light"
+                            ],
+                            "vulns": [
+                                "Reliance on a Single Technology or Device for Surveillance of an Area"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Wireless/RF Jamming"
+                            ],
+                            "vulns": [
+                                "Usage of RF Technologies That Lack Jamming Resilience",
+                                "Not Disabling Unnecessary Middleware Features (i.e., Back-End Scripting)",
+                                "Unnecessary Components Enabled",
+                                "Usage of RF Technologies That Lack Jamming Resilience",
+                                "Lack of Employee Training in RF Technologies",
+                                "Inadequate Anomalous RF Signal Detection",
+                                "Missing Encryption of Sensitive Data (CWE-311)",
+                                "Protection Mechanism Failure (CWE-693"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Electronic Article Surveillance (EAS)",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Hook Detachers\nEAS Signal Jamming\nPlacing Stolen Goods in Faraday Bags"
+                            ],
+                            "vulns": [
+                                "Usage of RF Technologies That Lack Jamming Resilience",
+                                "Not Disabling Unnecessary Middleware Features (i.e., Back-End Scripting)",
+                                "Unnecessary Components Enabled",
+                                "Usage of RF Technologies That Lack Jamming Resilience",
+                                "Lack of Employee Training in RF Technologies",
+                                "Inadequate Anomalous RF Signal Detection",
+                                "Missing Encryption of Sensitive Data (CWE-311)",
+                                "Protection Mechanism Failure (CWE-693"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Pretexting as Customer Picking Up Online Order (Multichannel Sales)",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Eavesdropping on Radio Communications"
+                            ],
+                            "vulns": [
+                                "Lack of Employee Training on Social Engineering",
+                                "Inadequate Cryptographic Measures",
+                                "Cleartext Transmission of Sensitive Information (CWE-319)",
+                                "Missing Encryption of Sensitive Data (CWE-311)",
+                                "Insufficient Management of Access Controls  to Authorized Hardware Devices on Private Networks"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Shoulder Surfing"
+                            ],
+                            "vulns": [
+                                "Lack of Mindfulness Of Surroundings"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Fraudulent Receipts or Forms"
+                            ],
+                            "vulns": [
+                                "Unsatisfactory Validation Methods (Checking ID, Card, Receipt)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Inventory Control Devices",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Insert Logic Bomb to Discount Products 100% During a Predefined Period"
+                            ],
+                            "vulns": [
+                                "Ineffective WAF, Blacklist/Whitelist, Anti-Virus or Other Exploit Protection (M1050)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Escalate Privileges to Approve Discounts"
+                            ],
+                            "vulns": [
+                                "Improper Privilege Management (CWE-269)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "eCommerce",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Exploiting Race Conditions to Process Additional Coupon/Voucher Redemptions Beyond the Intended Limits"
+                            ],
+                            "vulns": [
+                                "Ineffective WAF, Blacklist/Whitelist, Anti-Virus or Other Exploit Protection (M1050)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Exploit Business Logic Issues to Skip Payment Steps"
+                            ],
+                            "vulns": [
+                                "Insufficient Security Audits "
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Altering the Shipping or Pickup Details for Orders Placed by Other Customers"
+                            ],
+                            "vulns": [
+                                "Insufficient Session Validation or IDOR Protection",
+                                "Improper API Privilege Access"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Hijack Customer Accounts"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Place Orders Using Stored Payment Information"
+                                    ],
+                                    "vulns": [
+                                        "InsecureCoding Practices"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Change Pending Shipments to in-Store Pickup"
+                                    ],
+                                    "vulns": [
+                                        "Insecure Coding Resulting in Session Hijacking  Issues",
+                                        "Improper API Privilege Access",
+                                        "Insufficient IDOR Protection"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Hijack Customer Accounts and Modify Pending Orders"
+                            ],
+                            "vulns": [
+                                "Insecure Coding Resulting in Session Hijacking  Issues",
+                                "Insufficient IDOR Protection",
+                                "Improper API Privilege Access"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "RFID Inventory Tracking",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Price Tag Swapping"
+                            ],
+                            "vulns": [
+                                "Lack of Effective Monitoring at Checkout",
+                                "Lack of Effective Preventative Measures and Surveillance ",
+                                "Lack of Item Verification at Counter (Collate Weight With Tag)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Denial-of-Service via RF Jamming"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Mini EMP Pulse Attacks\nBuffer Overflow RFID Attacks"
+                                    ],
+                                    "vulns": [
+                                        "Not Disabling Unnecessary Middleware Features (i.e., Back-End Scripting)",
+                                        "Unnecessary Components Enabled",
+                                        "Usage of RF Technologies That Lack Jamming Resilience",
+                                        "Lack of Employee Training in RF Technologies",
+                                        "Inadequate Anomalous RF Signal Detection"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "RFID Tag Removal/Destruction"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Usage of Neodynium Magnet, Hook Detachers, or S3 Keys"
+                                    ],
+                                    "vulns": [
+                                        "Improper Physical Access Control (CWE-1263)",
+                                        "Inadequate Presence of Security Personnel ",
+                                        "Lack of Deterrents",
+                                        "Surveillance Coverage Gaps"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "RFID Tag Re-Writing via Unlocked Data-Blocks"
+                            ],
+                            "vulns": [
+                                "READ/WRITE Protection Not Used",
+                                "Lack of Blocker Tags or Tools Like RFID Guardian"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "RFID Malware"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Remote Code Execution in Web, Back-End, or Middleware Systems"
+                                    ],
+                                    "vulns": [
+                                        "Ineffective WAF, Blacklist/Whitelist, Anti-Virus or Other Exploit Protection (M1050)"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "SQLI Leading to Unauthorized Access or Modification of Private Data"
+                                    ],
+                                    "vulns": [
+                                        "Insecure Coding Practices"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Information Leakage via RFID Cloner"
+                            ],
+                            "vulns": [
+                                "Lack of RFID-blocking Sleeves on ID Cards",
+                                "Lack of Policies That Rotate Credentials ",
+                                "Lack of Network Segmentation (M1030)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "RFID MitM Attack"
+                            ],
+                            "vulns": [
+                                "Lack of Anti-Tamper Screws or Controls (i.e., Additional Wires to Create Circuit Inside RFID Reader)",
+                                "Lack of Effective Surveillance (i.e., Motion-Sensing Reporting Cameras Focused on RFID Reader)"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "threat": "Information Theft",
+            "attacksurfaces": [
+                {
+                    "attacksurface": "Customer Loyalty/Reward Data",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Retail Mobile Application Attacks"
+                            ],
+                            "vulns": [
+                                "Data Leakage via Application Screenshot ",
+                                "Use of Implicit Intent for Sensitive Communication (CWE-927)",
+                                "Insufficient Cryptography",
+                                "Insecure Communication",
+                                "Insecure Data Storage"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Employ Probabilistic Techniques"
+                            ],
+                            "vulns": [
+                                "Predictable or Static Redemption Tokens",
+                                "Use of Insufficiently Random Values (CWE-330)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Social Engineering Customer Service"
+                            ],
+                            "vulns": [
+                                "Insufficient Antivirus/Antimalware",
+                                "Insufficient Network Intrusion Prevention",
+                                "Insufficient User Training"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "eCommerce PCI Data",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "eSkimming of PCI Data"
+                            ],
+                            "vulns": [
+                                "Inconsistent Interpretation of HTTP Requests (CWE-444)",
+                                "Misconfigured HTTP Security Headers",
+                                "Misconfigured Cookie Security Attributes",
+                                "Exposed Administrative Infrastructure",
+                                "Vulnerabilities in Unsecured Administrative Infrastructure",
+                                "Outdated/Unpatched eCommerce Platforms",
+                                "Software Supply Chain Compromise",
+                                "Improper Input Validation (CWE-20)",
+                                "Least Privilege Violation (CWE-272)",
+                                "Inadequate Network Segmentation"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Exploiting Private Data Exposure "
+                            ],
+                            "vulns": [
+                                "Lack of Sufficient Password Policies",
+                                "Insufficiently Restricted Access to Systems and Networks That Store PCI Data",
+                                "Lack of Zero-Trust Role-Based Access for Sensitive Data",
+                                "Inadequate Network Segmentation",
+                                "Misconfigured ACLs"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "eCommerce Customer Accounts",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Brute Force Attacks\nPassword Spraying\nCredential Stuffing"
+                            ],
+                            "vulns": [
+                                "Inadequate Anomalous Network Pattern Detection",
+                                "Use of Single-Factor Authentication (CWE-308)",
+                                "Weak Password Requirements (CWE-521)",
+                                "Improper Restriction of Excessive Authentication Attempts (CWE-307)",
+                                "Insufficiently Protected Credentials (CWE-522)",
+                                "Improper Control of Interaction Frequency (CWE-799)",
+                                "Ineffective WAF, Blacklist/Whitelist, Anti-Virus or Other Exploit Protection (M1050)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Session Hijacking"
+                            ],
+                            "vulns": [
+                                "Use of Single-Factor Authentication (CWE-308)",
+                                "Inconsistent Interpretation of HTTP Requests (CWE-444)",
+                                "Misconfigured HTTP Security Headers",
+                                "Misconfigured Cookie Security Attributes",
+                                "Outdated/Unpatched eCommerce Platforms",
+                                "Improper Input Validation (CWE-20)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Phishing"
+                            ],
+                            "vulns": [
+                                "Lack of Use Anti-Spoofing and Email Authentication Mechanisms",
+                                "Inadequate Anomalous Network Pattern Detection",
+                                "Use of Single-Factor Authentication (CWE-308)",
+                                "Improper Restriction of Excessive Authentication Attempts (CWE-307)",
+                                "Insufficiently Protected Credentials (CWE-522)",
+                                "Improper Control of Interaction Frequency (CWE-799)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Retail Analytics",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Exploit Public-Facing Application "
+                            ],
+                            "vulns": [
+                                "Active Debug Code (CWE-489)",
+                                "Lack of Systematic Patch Management"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Spear Phishing the Data & Analytics Team "
+                            ],
+                            "vulns": [
+                                "Insufficient Antivirus/Antimalware",
+                                "Insufficient Network Intrusion Prevention",
+                                "Insufficient User Training"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "POS Systems",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Dumpster Diving"
+                            ],
+                            "vulns": [
+                                "Ineffective Disposal of Decommissioned Hardware",
+                                "Ineffective Physically Preventative Measures to Prevent Access"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Install Card Skimmers/Keyloggers/Other Rogue Devices"
+                            ],
+                            "vulns": [
+                                "Insufficient Detection of Hardware Additions",
+                                "Insufficient Network Access Control Policies"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Shoulder Surfing of QR Code Payments"
+                            ],
+                            "vulns": [
+                                "Synchronized Token Lifting and Spending (STLS)",
+                                "Low Entropy in Payment Token for QR Code-Based Mobile Payment Options Resulting in the Theft of Funds",
+                                "Lack of Mindfulness Of Surroundings"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Trick Customers Into Scanning a Malicious QR Code for Payment With Their Retail Mobile Application"
+                            ],
+                            "vulns": [
+                                "Data Input Validation Issues (CWE-1215)",
+                                "Ineffective WAF, Blacklist/Whitelist, Anti-Virus or Other Exploit Protection (M1050)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Kiosk-Mode Bypass"
+                            ],
+                            "vulns": [
+                                "Improper Access Control (CWE-284)",
+                                "Outdated Software",
+                                "Execution With Unnecessary Privileges (CWE-250)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Malicious Software Update via Supply Chain Compromise"
+                            ],
+                            "vulns": [
+                                "Ineffective WAF, Blacklist/Whitelist, Anti-Virus or Other Exploit Protection (M1050)",
+                                "Lack of Continuous Vulnerability Assessment and Remediation"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Rogue Hardware via Supply Chain Compromise"
+                            ],
+                            "vulns": [
+                                "Lack of Governance Over Third-Party Vendors",
+                                "Inadequate Anomalous Hardware Additions Detection",
+                                "Inadequate Anomalous Network Pattern Detection",
+                                "Improper Physical Access Control (CWE-1263)",
+                                "Unnecessary Components Enabled",
+                                "Insufficient Internal Logging and Monitoring for IOCs "
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Electromagnetic Side-Channel Attack (CAPEC-622)"
+                            ],
+                            "vulns": [
+                                "Lack of Continuous Vulnerability Assessment and Remediation"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Retail Outlet Wireless (Non-802.11X)",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Eavesdropping to Inform Organized Retail Criminals of Opportunities"
+                            ],
+                            "vulns": [
+                                "Cleartext Transmission of Sensitive Information (CWE-319)",
+                                "Missing Encryption of Sensitive Data (CWE-311)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Identification of Automation Controllers Using Non-Standardized, Outdated, or Custom RF Protocols to Open Doors, Control Alarms, Manage Inventory"
+                            ],
+                            "vulns": [
+                                "Authentication Bypass by Capture-Replay (CWE-294)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "RF Jamming or Denial of Service"
+                            ],
+                            "vulns": [
+                                "Inadequate Anomalous RF Signal Detection",
+                                "Usage of RF Technologies That Lack Jamming Resilience",
+                                "Lack of Employee Training in RF Technologies",
+                                "Unnecessary Components Enabled"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Retail Outlet Wireless (802.11X)",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Authentication / Association Flooding\nDe-Authentication Flooding\nExtensible Authentication Protocol (EAP) Attacks\nWEP Attacks\nWPA-PSK Dictionary Attack\nRogue Wireless Access Points"
+                            ],
+                            "vulns": [
+                                "Inadequate Anomalous Network Pattern Detection",
+                                "Lack of Protected Management Frames",
+                                "Lack of Controls for EAP Brute Force Attacks",
+                                "APs Broadcasting Non-Wpa2/Wpa3 Networks",
+                                "Lack of Rogue AP Detection",
+                                "Unnecessary Features Enabled",
+                                "Weak Password Requirements (CWE-521)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Man-in-the-Middle (MitM)"
+                            ],
+                            "vulns": [
+                                "Ineffective Network Authentication, Filtering, Whitelisting, or Other Access Control",
+                                "Missing Encryption of Sensitive Data (CWE-311)",
+                                "Cleartext Transmission of Sensitive Information (CWE-319)"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "threat": "Disruptions to Business Operations",
+            "attacksurfaces": [
+                {
+                    "attacksurface": "Corporate Operations",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Social Media Account Hijacking"
+                            ],
+                            "vulns": [
+                                "Weak Password Requirements (CWE-521)",
+                                "Insufficiently Protected Credentials (CWE-522)",
+                                "Use of Single-Factor Authentication (CWE-308)",
+                                "Insecure Handling of Shared Access to Accounts",
+                                "Lack of Employee Training on Social Engineering",
+                                "Exposure of Sensitive Information to an Unauthorized Actor (CWE-200)",
+                                "Inadequate Anomalous Communications Detection",
+                                "Lack of Use Anti-Spoofing and Email Authentication Mechanisms"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Extortion or 'Doxing' of Executives/Directors"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Searching Public Resources (e.g., OSINT)"
+                                    ],
+                                    "vulns": [
+                                        "Information Disclosure Within Public Resources",
+                                        "Information Disclosure Within Breach Data",
+                                        "Excessive Attack Surface",
+                                        "Inadequate Threat Intelligence Gathering or Monitoring"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Social Engineering for Information"
+                                    ],
+                                    "vulns": [
+                                        "Exposure of Sensitive Information to an Unauthorized Actor (CWE-200)",
+                                        "Lack of Employee Training on Social Engineering",
+                                        "Inadequate Anomalous Communications Detection",
+                                        "Lack of Use Anti-Spoofing and Email Authentication Mechanisms"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Retail Outlets",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Flash Mob Robbery\nOrganized Retail Crime\nVandalism"
+                            ],
+                            "vulns": [
+                                "Inadequate Threat Intelligence Gathering or Monitoring",
+                                "Improper Physical Access Control (CWE-1263)",
+                                "Inadequate Presence of Security Personnel ",
+                                "Lack of Deterrents",
+                                "Surveillance Coverage Gaps"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Wireless Jamming or Denial of Service (802.11X)"
+                            ],
+                            "vulns": [
+                                "Inadequate Anomalous Network Pattern Detection",
+                                "Inadequate Anomalous Wireless Network Pattern Detection",
+                                "Lack of Protected Management Frames",
+                                "Lack of Controls for EAP Brute Force Attacks",
+                                "APs Broadcasting Non-Wpa2/Wpa3 Networks",
+                                "Lack of Rogue AP Detection",
+                                "Unnecessary Features Enabled",
+                                "Weak Password Requirements (CWE-521)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Wireless Jamming or Denial of Service (Non-802.11X)"
+                            ],
+                            "vulns": [
+                                "Inadequate Anomalous RF Signal Detection",
+                                "Usage of RF Technologies That Lack Jamming Resilience",
+                                "Lack of Employee Training in RF Technologies",
+                                "Unnecessary Components Enabled"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "EV Charging Stations",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Malvertising\nDamage to Electric Vehicles\nStore Downtime Due to Electrical Disruptions"
+                            ],
+                            "vulns": [
+                                "Lack of Continuous Vulnerability Assessment and Remediation",
+                                "Lack of Governance Over Third-Party Vendors"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "eCommerce",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Bot-Driven Scalping of High-Demand Products"
+                            ],
+                            "vulns": [
+                                "Improper Restriction of Excessive Authentication Attempts (CWE-307)",
+                                "Improper Control of Interaction Frequency (CWE-799)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Hijacking Vendor/Supplier Portal Accounts"
+                            ],
+                            "vulns": [
+                                "Inadequate Validation Policy for User Login"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Denial-of-Service"
+                            ],
+                            "vulns": [
+                                "Lack of Effective Filtering of Network Traffic (Use CDNs, Filter Boundary Traffic, and Protocols, Block Ports) (M1037)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Supply-Chain Operations",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Wireless Jamming or Denial of Service (802.11X)"
+                            ],
+                            "vulns": [
+                                "Inadequate Anomalous Network Pattern Detection",
+                                "Inadequate Anomalous Wireless Network Pattern Detection",
+                                "Lack of Protected Management Frames",
+                                "Lack of Controls for EAP Brute Force Attacks",
+                                "APs Broadcasting Non-Wpa2/Wpa3 Networks",
+                                "Lack of Rogue AP Detection",
+                                "Unnecessary Features Enabled",
+                                "Weak Password Requirements (CWE-521)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Wireless Jamming or Denial of Service (Non-802.11X)"
+                            ],
+                            "vulns": [
+                                "Inadequate Anomalous RF Signal Detection",
+                                "Usage of RF Technologies That Lack Jamming Resilience",
+                                "Lack of Employee Training in RF Technologies",
+                                "Unnecessary Components Enabled"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "threat": "Broad Deployment of Insecure IoT",
+            "attacksurfaces": [
+                {
+                    "attacksurface": "Mobile Devices, Cloud POS, Kiosks",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Compromise Hardware Supply Chain"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Pre-Installed Malware in Phone, USB Drive, Camera or Other Mobile Device"
+                                    ],
+                                    "vulns": [
+                                        "Lack of Governance Over Third-Party Vendors",
+                                        "Inadequate Anomalous Hardware Additions Detection",
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Improper Physical Access Control (CWE-1263)",
+                                        "Unnecessary Components Enabled",
+                                        "Insufficient Internal Logging and Monitoring for IOCs "
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Sale of Modified/Counterfeit Products to Legitimate Distributors"
+                                    ],
+                                    "vulns": [
+                                        "Lack of Governance Over Third-Party Vendors",
+                                        "Inadequate Anomalous Hardware Additions Detection",
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Improper Physical Access Control (CWE-1263)",
+                                        "Unnecessary Components Enabled",
+                                        "Insufficient Internal Logging and Monitoring for IOCs "
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Malicious Code in Firmware"
+                                    ],
+                                    "vulns": [
+                                        "Lack of Governance Over Third-Party Vendors",
+                                        "Inadequate Anomalous Hardware Additions Detection",
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Improper Physical Access Control (CWE-1263)",
+                                        "Unnecessary Components Enabled",
+                                        "Insufficient Internal Logging and Monitoring for IOCs "
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Compromise Software Supply Chain"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Manipulation of Development Tools or Environment\nManipulate Software Distribution or Update Mechanism\nImplant Spying Device\nExfiltration of Private Data\nSale of Modified/Counterfeit Products to Legitimate Distributors\nDependency Confusion\nMalicious Code in Firmware"
+                                    ],
+                                    "vulns": [
+                                        "Insufficient Internal Logging and Monitoring for IOCs ",
+                                        "Lack of Governance Over Third-Party Vendors",
+                                        "Lack of Strict Vendor Policy",
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Inadequate Anomalous File Creation Detection",
+                                        "Inadequate Usage of Endpoint Protection Software",
+                                        "Unrestricted Access to Remote Resources",
+                                        "Unnecessary Components Enabled",
+                                        "Unnecessary Features Enabled",
+                                        "Insufficient Verification of Data Authenticity (CWE-345)",
+                                        "Insufficient Vulnerability Scanning",
+                                        "Download of Code Without Integrity Check (CWE-494)",
+                                        "Lack of Systematic Patch Management"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Cloud Account or Infrastructure Compromise"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Denial of Service"
+                                    ],
+                                    "vulns": [
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Lack of Responsiveness by an Upstream Provider",
+                                        "Misconfigured Host-Based Monitoring",
+                                        "Lack of Early Detection Coupled With a Disaster Recovery Plan",
+                                        "Lack of Maintained Endpoint Protection, WAF, or Antivirus Software",
+                                        "Misconfiguration of Traffic Filtering Rules",
+                                        "Inadequate Backup Policy (M1029)",
+                                        "Insecure or Out-of-Date Code"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Access Private Data (Financial, Employee, Customer PII)"
+                                    ],
+                                    "vulns": [
+                                        "Lack of Zero-Trust Policy Controls (M1022)"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Data Destruction"
+                                    ],
+                                    "vulns": [
+                                        "Inadequate Backup Policy or Recovery Plans (M1029)",
+                                        "Backups Not Stored Remotely (M1053)",
+                                        "Unsafe OS Configuration (Did Not Disable Deletion of Services or Files Necessary for Data Recovery) (M1028)"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Resource Hijacking"
+                                    ],
+                                    "vulns": [
+                                        "Insecure Password Policy",
+                                        "Inefficient Monitoring of Resource Usage (CPU, Memory) (DS0029)",
+                                        "Inefficient Monitoring for IOCs"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Taint Shared Content"
+                                    ],
+                                    "vulns": [
+                                        "Insecure Coding Practices",
+                                        "Lack of Isolation on Critical or Sensitive Resources (M1030)",
+                                        "Lack of Encryption on Sensitive Information (M1041)",
+                                        "Least Privilege Principles Not Applied Effectively (M1022)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Kiosk/PoS Breakout"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Functionality Misuse"
+                                    ],
+                                    "attacks": [
+                                        {
+                                            "attack": [
+                                                "Browser-Based Exploits"
+                                            ],
+                                            "vulns": [
+                                                "Ineffective WAF, Blacklist/Whitelist, Anti-Virus or Other Exploit Protection (M1050)",
+                                                "Unsafe Privileged Account Management (M1026)",
+                                                "Lack of Application Isolation and Sandboxing (M1048)"
+                                            ]
+                                        },
+                                        {
+                                            "attack": [
+                                                "E-Mail Attachment Exploit"
+                                            ],
+                                            "vulns": [
+                                                "Ineffective WAF, Blacklist/Whitelist, Anti-Virus or Other Exploit Protection (M1050)",
+                                                "Unsafe Privileged Account Management (M1026)",
+                                                "Lack of Application Isolation and Sandboxing (M1048)"
+                                            ]
+                                        },
+                                        {
+                                            "attack": [
+                                                "Install Malicious Software"
+                                            ],
+                                            "attacks": [
+                                                {
+                                                    "attack": [
+                                                        "Delivered via Connection to HTTP or FTP Server"
+                                                    ],
+                                                    "vulns": [
+                                                        "Lack of Network Segmentation (M1030)",
+                                                        "Inadequate Anomalous Network Pattern Detection"
+                                                    ]
+                                                },
+                                                {
+                                                    "attack": [
+                                                        "Registry Editors, File Editors"
+                                                    ],
+                                                    "vulns": [
+                                                        "Unsafe Privileged Account Management (M1026)",
+                                                        "Weak Password Requirements (CWE-521)",
+                                                        "Insufficiently Protected Credentials (CWE-522)"
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "attack": [
+                                                "SQL Injection in Text Fields"
+                                            ],
+                                            "vulns": [
+                                                "Insecure Sanitation in Code or Other Exploit Protection",
+                                                "Lack of Preventative Vulnerability Scanning (M1016)"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Brute Force"
+                                    ],
+                                    "vulns": [
+                                        "Lack of Rate-Limiting (WAF)"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Interface Manipulation"
+                                    ],
+                                    "vulns": [
+                                        "Lack of Preventative Physical Controls or Employee Oversight"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Lockscreen Bypass"
+                                    ],
+                                    "attacks": [
+                                        {
+                                            "attack": [
+                                                "Crash Kiosk Software"
+                                            ],
+                                            "vulns": [
+                                                "Lack of Application Isolation and Sandboxing (M1048)"
+                                            ]
+                                        },
+                                        {
+                                            "attack": [
+                                                "Sticky Keys, Shortcuts, Open PDF"
+                                            ],
+                                            "vulns": [
+                                                "Unsafe Privileged Account Management (M1026)",
+                                                "Lack of Application Isolation and Sandboxing (M1048)"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Shoulder Surfing"
+                                    ],
+                                    "vulns": [
+                                        "Lack of Mindfulness Of Surroundings"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Hardware Tools"
+                                    ],
+                                    "attacks": [
+                                        {
+                                            "attack": [
+                                                "BadUSB"
+                                            ],
+                                            "vulns": [
+                                                "Lack of Protection Against Hardware Installation (M1034)",
+                                                "Lack or Misconfiguration of Endpoint Sensors or Asset Management Systems"
+                                            ]
+                                        },
+                                        {
+                                            "attack": [
+                                                "Install Keylogger"
+                                            ],
+                                            "vulns": [
+                                                "Lack of Protection Against Hardware Installation (M1034)"
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "RFID Inventory Tracking",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Price Tag Swapping"
+                            ],
+                            "vulns": [
+                                "Lack of Effective Monitoring at Checkout",
+                                "Lack of Effective Preventative Measures and Surveillance ",
+                                "Lack of Item Verification at Counter (Collate Weight With Tag)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Denial-of-Service via RF Jamming"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Sensormatic Jammers\nMini EMP Pulse Attacks\nBuffer Overflow RFID Attacks"
+                                    ],
+                                    "vulns": [
+                                        "Usage of RF Technologies That Lack Jamming Resilience",
+                                        "Not Disabling Unnecessary Middleware Features (i.e., Back-End Scripting)",
+                                        "Unnecessary Components Enabled",
+                                        "Usage of RF Technologies That Lack Jamming Resilience",
+                                        "Lack of Employee Training in RF Technologies",
+                                        "Inadequate Anomalous RF Signal Detection"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "RFID Tag Removal/Destruction"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Usage of Neodynium Magnet, Hook Detachers, or S3 Keys"
+                                    ],
+                                    "vulns": [
+                                        "Improper Physical Access Control (CWE-1263)",
+                                        "Inadequate Presence of Security Personnel ",
+                                        "Lack of Deterrents",
+                                        "Surveillance Coverage Gaps"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "RFID Tag Re-Writing via Unlocked Data-Blocks"
+                            ],
+                            "vulns": [
+                                "READ/WRITE Protection Not Used",
+                                "Lack of Blocker Tags or Tools Like RFID Guardian"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "RFID Malware"
+                            ],
+                            "vulns": [
+                                "Improper Physical Access Control (CWE-1263)",
+                                "Inadequate Usage of Endpoint Protection Software"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Information Leakage via RFID Cloner"
+                            ],
+                            "vulns": [
+                                "Lack of RFID-blocking Sleeves on ID Cards",
+                                "Lack of Policies That Rotate Credentials ",
+                                "Lack of Network Segmentation (M1030)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "RFID MitM Attack"
+                            ],
+                            "vulns": [
+                                "Lack of Anti-Tamper Screws or Controls (i.e., Additional Wires to Create Circuit Inside RFID Reader)",
+                                "Lack of Effective Surveillance (i.e., Motion-Sensing Reporting Cameras Focused on RFID Reader)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Beacon Technology",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Compromise Software Supply Chain"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Manipulation of Development Tools or Environment\nManipulate Software Distribution or Update Mechanism\nImplant Spying Device\nExfiltration of Private Data\nSale of Modified/Counterfeit Products to Legitimate Distributors\nDependency Confusion\nMalicious Code in Firmware"
+                                    ],
+                                    "vulns": [
+                                        "Insufficient Internal Logging and Monitoring for IOCs ",
+                                        "Lack of Governance Over Third-Party Vendors",
+                                        "Lack of Strict Vendor Policy",
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Inadequate Anomalous File Creation Detection",
+                                        "Inadequate Usage of Endpoint Protection Software",
+                                        "Unrestricted Access to Remote Resources",
+                                        "Unnecessary Components Enabled",
+                                        "Unnecessary Features Enabled",
+                                        "Insufficient Verification of Data Authenticity (CWE-345)",
+                                        "Insufficient Vulnerability Scanning",
+                                        "Download of Code Without Integrity Check (CWE-494)",
+                                        "Lack of Systematic Patch Management"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Compromise Hardware Supply Chain (T1195.003)"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Modifying Firmware via Malware Into Servers, Workstations, Network Infrastructure, or Peripherals"
+                                    ],
+                                    "attacks": [
+                                        {
+                                            "attack": [
+                                                "Sale of Modified/Counterfeit Products to Customers"
+                                            ],
+                                            "vulns": [
+                                                "Lack of Governance Over Third-Party Vendors",
+                                                "Inadequate Anomalous Hardware Additions Detection",
+                                                "Inadequate Anomalous Network Pattern Detection",
+                                                "Improper Physical Access Control (CWE-1263)",
+                                                "Unnecessary Components Enabled",
+                                                "Insufficient Internal Logging and Monitoring for IOCs "
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Install Malicious or Vulnerable Firmware"
+                            ],
+                            "vulns": [
+                                "Lack of Secure Policy on Vendor's Side"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Embedded Hardware Attacks"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "JTAG and UART Probing"
+                                    ],
+                                    "vulns": [
+                                        "Not Removing Debug Pins From Final Board Designs"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Cryptographic Protocol Attacks"
+                                    ],
+                                    "vulns": [
+                                        "Inadequate Implementation of Secure Design Fundamentals",
+                                        "Re-Using Keys or Using Out-of-Date Protocols",
+                                        "Lack of Hardware Security Modules (HSMs)"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Side-Channel Analysis "
+                                    ],
+                                    "vulns": [
+                                        "Ineffective Implementation of Security Policy"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Hardware Trojans"
+                                    ],
+                                    "vulns": [
+                                        "Lack of Proactive CPU Protections ( Machine-Learning Models)",
+                                        "Inadequate Anomalous Hardware Additions Detection"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Fault-Injection"
+                                    ],
+                                    "vulns": [
+                                        "Improper Handling of Faults That Lead to Instruction Skips (CWE-1332)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Implant Backdoor via Management Software"
+                            ],
+                            "vulns": [
+                                "Lack of Secure Policy on Vendor's Side"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Cloud Service Attacks"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Denial of Service"
+                                    ],
+                                    "vulns": [
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Lack of Responsiveness by an Upstream Provider",
+                                        "Misconfigured Host-Based Monitoring",
+                                        "Lack of Early Detection Coupled With a Disaster Recovery Plan",
+                                        "Lack of Maintained Endpoint Protection, WAF, or Antivirus Software",
+                                        "Misconfiguration of Traffic Filtering Rules",
+                                        "Inadequate Backup Policy (M1029)",
+                                        "Insecure or Out-of-Date Code"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Access Private Data (Financial, Employee, Customer PII)"
+                                    ],
+                                    "vulns": [
+                                        "Lack of Zero-Trust Policy Controls (M1022)"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Data Destruction"
+                                    ],
+                                    "vulns": [
+                                        "Inadequate Backup Policy or Recovery Plans (M1029)",
+                                        "Backups Not Stored Remotely (M1053)",
+                                        "Unsafe OS Configuration (Did Not Disable Deletion of Services or Files Necessary for Data Recovery) (M1028)"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Resource Hijacking"
+                                    ],
+                                    "vulns": [
+                                        "Insecure Password Policy",
+                                        "Inefficient Monitoring of Resource Usage (CPU, Memory) (DS0029)",
+                                        "Inefficient Monitoring for IOCs"
+                                    ]
+                                },
+                                {
+                                    "attack": [
+                                        "Taint Shared Content"
+                                    ],
+                                    "vulns": [
+                                        "Insecure Coding Practices",
+                                        "Lack of Isolation on Critical or Sensitive Resources (M1030)",
+                                        "Lack of Encryption on Sensitive Information (M1041)",
+                                        "Least Privilege Principles Not Applied Effectively (M1022)"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Denial of Service"
+                            ],
+                            "vulns": [
+                                "Inadequate Anomalous Network Pattern Detection",
+                                "Lack of Responsiveness by an Upstream Provider",
+                                "Misconfigured Host-Based Monitoring",
+                                "Lack of Early Detection Coupled With a Disaster Recovery Plan",
+                                "Lack of Maintained Endpoint Protection, WAF, or Antivirus Software",
+                                "Misconfiguration of Traffic Filtering Rules",
+                                "Inadequate Backup Policy (M1029)",
+                                "Insecure or Out-of-Date Code"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Autonomous Robots/Drones",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Hijacking via Counterfeit GPS Signals"
+                            ],
+                            "vulns": [
+                                "Lack of Prepared Defensive Techniques or Mitigation Plan"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Denial of Service via RF Jamming"
+                            ],
+                            "vulns": [
+                                "Not Disabling Unnecessary Middleware Features (i.e., Back-End Scripting)",
+                                "Unnecessary Components Enabled",
+                                "Usage of RF Technologies That Lack Jamming Resilience",
+                                "Lack of Employee Training in RF Technologies",
+                                "Inadequate Anomalous RF Signal Detection",
+                                "Lack of Early Detection Coupled With a Disaster Recovery Plan",
+                                "Lack of Configuration Settings That Filter Traffic Based on Port, Protocol, or Source",
+                                "Lack of Preventative Hardware Security Measures"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Unauthorized Surveillance"
+                            ],
+                            "vulns": [
+                                "Recon Data Can Assist in Other Attack Vectors (Social Engineering, Placement of Hardware Tools in Blindspots)",
+                                "Zero-Trust Policies and Adequate Data Segregation Not Implemented "
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Hacking Drone to Compromise Mobile Device"
+                            ],
+                            "vulns": [
+                                "Lack of VPN or Other Network Protection Methods "
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "threat": "Insider Threats",
+            "attacksurfaces": [
+                {
+                    "attacksurface": "Customers/Vistors",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Malicious Actor Posing as a Visitor From Another Location or Corporate Office"
+                            ],
+                            "vulns": [
+                                "Insufficient Employee Training on Social Engineering"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Employees",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Merchandise Theft"
+                            ],
+                            "vulns": [
+                                "Insufficient Personal Presence, Surveillance, or Anti-Shoplifting Technology Measures"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Tampering With POS or Backoffice Hardware"
+                            ],
+                            "vulns": [
+                                "Improper Access Control for Register Interface (CWE-1262)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Under-Ringing of Products at Checkout"
+                            ],
+                            "vulns": [
+                                "Lack of Validation Between Funds and Inventory",
+                                "Lack of Surveillance or Personnel Around Checkout",
+                                "Lack of Policy That Requires Validation From Another Employee When Using Register for Personal Uses"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Monetary Theft via Gift Card Swapping or Diverting Refunds"
+                            ],
+                            "vulns": [
+                                "Lack of Surveillance or Logging Around POS",
+                                "Lack of Policy That Requires Validation From Another Employee When Using Register for Personal Uses"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Coordinate Campaign of Cyberattacks That Adapt to Detailed Surveillance"
+                            ],
+                            "vulns": [
+                                "Inability to Outperform and Subvert Machine-Learning or AI Technology",
+                                "Lack of Continuous Vulnerability Assessment and Remediation"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Combine Physical and Remote Attacks for Increased Effectiveness"
+                            ],
+                            "vulns": [
+                                "Insufficient Internal Audits Performed by Security Team (Third-Party Audit May Be Preferable)",
+                                "Lack of Systematic  Patch Management"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Insider-Based Social Engineering"
+                            ],
+                            "vulns": [
+                                "Lack of Awareness of Public OSINT Footprint ",
+                                "Lack of Employee Training on Social Engineering"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Planting 5g/LTE-Based Rogue Device for Remote Access"
+                            ],
+                            "vulns": [
+                                "Segregation Within Network Infrastructure",
+                                "Whitelist Traffic Filter for Authorized Devices Only"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Planting Keyloggers"
+                            ],
+                            "vulns": [
+                                "Ineffective WAF, Blacklist/Whitelist, Anti-Virus or Other Exploit Protection (M1050)"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Copying Door or Safe Keys"
+                            ],
+                            "vulns": [
+                                "Lack of Electronic Doors That Require Individual Keys and Log Employee Use",
+                                "Insufficient Surveilance"
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Internal Spearphishing"
+                            ],
+                            "vulns": [
+                                "Lack of Phishing Awareness Training"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "attacksurface": "Suppliers, Contractors, and Vendors",
+                    "attacks": [
+                        {
+                            "attack": [
+                                "Compromise Hardware Supply Chain"
+                            ],
+                            "vulns": [
+                                "Lack of Governance Over Third-Party Vendors",
+                                "Inadequate Anomalous Hardware Additions Detection",
+                                "Inadequate Anomalous Network Pattern Detection",
+                                "Improper Physical Access Control (CWE-1263)",
+                                "Unnecessary Components Enabled",
+                                "Insufficient Internal Logging and Monitoring for IOCs "
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Compromise Software Supply Chain"
+                            ],
+                            "attacks": [
+                                {
+                                    "attack": [
+                                        "Manipulation of Development Tools or Environment\nManipulate Software Distribution or Update Mechanism\nImplant Spying Device\nExfiltration of Private Data\nSale of Modified/Counterfeit Products to Legitimate Distributors\nDependency Confusion\nMalicious Code in Firmware"
+                                    ],
+                                    "vulns": [
+                                        "Insufficient Internal Logging and Monitoring for IOCs ",
+                                        "Lack of Governance Over Third-Party Vendors",
+                                        "Lack of Strict Vendor Policy",
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Inadequate Anomalous Network Pattern Detection",
+                                        "Inadequate Anomalous File Creation Detection",
+                                        "Inadequate Usage of Endpoint Protection Software",
+                                        "Unrestricted Access to Remote Resources",
+                                        "Unnecessary Components Enabled",
+                                        "Unnecessary Features Enabled",
+                                        "Insufficient Verification of Data Authenticity (CWE-345)",
+                                        "Insufficient Vulnerability Scanning",
+                                        "Download of Code Without Integrity Check (CWE-494)",
+                                        "Lack of Systematic Patch Management"
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "attack": [
+                                "Internal Spearphishing"
+                            ],
+                            "vulns": [
+                                "Insufficient Training on Phishing Among Employees"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
